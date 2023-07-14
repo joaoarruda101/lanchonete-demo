@@ -1,367 +1,960 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Lanchonete</title>
-	<link rel="canonical" href="https://www.lanchonete.sisout.com/">
-	<link rel="icon" href="./icons/hambruger.ico">
-	<meta name="viewport" content="user-scalable=no, initial-scale=1, 
-		maximum-scale=1, minimum-scale=1, width=device-width">
-	<link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-
-	<link rel="stylesheet" type="text/css" href="./css/materialize.min.css">
-	<link rel="stylesheet" type="text/css" href="./icons/material.css">
-	<link rel="stylesheet" type="text/css" href="./css/index.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="webthemez">
+    <title>ÁskerTech</title>
+    <!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="./images/ico/icone.png">
 </head>
-<body>
 
-<div class="navbar-fixed">
-	<nav class="">
-		<div class="topo-fixo">
-			<a href="#" class="brand-logo">
-				<div class="logo logo-small"></div>
-			</a>
- 			<a href="#" data-activates="mobile-demo" class="button-collapse"><i id="main_menu" class="material-icons">menu</i></a>
-		</div>
+<body id="home">
 
-		<ul class="right hide-on-med-and-down brand-logo">
-			<li><a class="scrollSuave" href="#products">Produtos</a></li>
-			<li><a class="scrollSuave" href="cardapio.html">Cardápio</a></li>
-			<li><a class="scrollSuave" href="#about">Quem somos</a></li>
-			<li><a class="scrollSuave" href="#contact">Contato</a></li>
-			<li><a class="scrollSuave" href="trabalheconosco.html">Trabalhe conosco</a></li>
-		</ul>
+    <header id="header">
+        <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
 
-		<ul class="side-nav" id="mobile-demo">
-			<li><a href="#">Home</a></li>
-			<li><a href="#products">Produtos</a></li>
-			<li><a href="cardapio.html">Cardápio</a></li>
-			<li><a href="#about">Quem somos</a></li>
-			<li><a href="#contact">Contato</a></li>
-			<li><a href="trabalheconosco.html">Trabalhe conosco</a></li>
-		</ul>
-	</nav>
-</div>
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="scroll active"><a href="#home">Inicio</a></li>
+                        <li class="scroll"><a href="#features">Características</a></li>
+                        <li class="scroll"><a href="#services">Serviços</a></li>
+                        <!-- <li class="scroll"><a href="#about">Sobre</a></li> -->
+                        <li class="scroll"><a href="#pricing">Produtos e preços</a></li>
+                        <!-- <li class="scroll"><a href="#our-team">Time</a></li> -->
+                        <li class="scroll"><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
 
-<div id="welcome"></div>
-<div id="welcome-black">
-	<div class="logo-burger"></div>	
-	<a class="center btn-down scrollSuave" href="#description"></a>
-</div>
+    <section id="hero-banner">
+        <div class="banner-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
 
-<div id="description" class="row valign-wrapper">
-	<div class="col s12 m5 l5">
-		<div class="center text-description">
-			<h2 class="center">Lanchonete</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elit maximus, ullamcorper neque ac, porta nisl. Vivamus pellentesque varius posuere. Integer sollicitudin, velit at vulputate fermentum, arcu ante efficitur purus, vitae consequat dolor lectus dignissim diam. Mauris eu congue libero. Etiam in tempus quam. Fusce quis eleifend orci, vel accumsan augue.</p>		
-		</div>
-	</div>
-</div> <!-- end description -->
+                        <h2><b>ÁskerTech</b> junto à você em um novo passo</h2>
+                        <p>Somos uma equipe de TI especializada e capacitada para dar alcance à sua projeção</p>
+                        <a class="btn btn-primary btn-lg" href="#pricing">Produtos</a>
 
-<section id="products" class="products">
-	<div class="text-fotos valign-wrapper">
-		<h2 class="center">MASSAS PRINCIPAIS</h2>
-	</div>
-	<div class="row">
-		<div class="col s4 m2 l2 imagens item1">
-			<div class="box-preco">
-				<div class="preco">
-					<h5 class="center">Carne Seca</h5>
-					<h4 class="center">R$ 19,90</h4>
-				</div>
-			</div>
-		</div>
-		<div class="col s4 m2 l2 imagens item2">
-			<div class="box-preco">
-				<div class="preco">
-					<h5>Americana</h5>
-					<h4 class="center">R$ 29,90</h4>
-				</div>
-			</div>
-		</div>	
-		<div class="col s4 m2 l2 imagens item3">
-			<div class="box-preco">
-				<div class="preco">
-					<h5 class="center">Baiana</h5>
-					<h4 class="center">R$ 19,90</h4>
-				</div>
-			</div>
-		</div>
-		<div class="col s4 m2 l2 imagens item4">
-			<div class="box-preco">
-				<div class="preco">
-					<h5 class="center">Portuguesa</h5>
-					<h4 class="center">R$ 29,90</h4>
-				</div>
-			</div>
-		</div>	
-		<div class="col s4 m2 l2 imagens item1">
-			<div class="box-preco">
-				<div class="preco">
-					<h5 class="center">Carne Seca</h5>
-					<h4 class="center">R$ 19,90</h4>
-				</div>
-			</div>
-		</div>
-		<div class="col s4 m2 l2 imagens item2">
-			<div class="box-preco">
-				<div class="preco">
-					<h5 class="center">Americana</h5>
-					<h4 class="center">R$ 29,90</h4>
-				</div>
-			</div>
-		</div>	
-		<div class="col m2 l2 imagens hide-on-small-only item5">
-			<div class="box-preco">
-				<div class="preco">
-					<h5 class="center">Abacaxi</h5>
-					<h4 class="center">R$ 19,90</h4>
-				</div>
-			</div>			
-		</div>	
-		<div class="col m2 l2 imagens hide-on-small-only item6">
-			<div class="box-preco">
-				<div class="preco">
-					<h5 class="center">Maracujá</h5>
-					<h4 class="center">R$ 29,90</h4>
-				</div>
-			</div>			
-		</div>	
-		<div class="col m2 l2 imagens hide-on-small-only item7">
-			<div class="box-preco">
-				<div class="preco">
-					<h5 class="center">Nozes</h5>
-					<h4 class="center">R$ 19,90</h4>
-				</div>
-			</div>			
-		</div>	
-		<div class="col m2 l2 imagens hide-on-small-only item8">
-			<div class="box-preco">
-				<div class="preco">
-					<h5 class="center">Limão</h5>
-					<h4 class="center">R$ 29,90</h4>
-				</div>
-			</div>			
-		</div>	
-		<div class="col m2 l2 imagens hide-on-small-only item5">
-			<div class="box-preco">
-				<div class="preco">
-					<h5 class="center">Abacaxi</h5>
-					<h4 class="center">R$ 19,90</h4>
-				</div>
-			</div>			
-		</div>	
-		<div class="col m2 l2 imagens hide-on-small-only item6">
-			<div class="box-preco">
-				<div class="preco">
-					<h5 class="center">Maracujá</h5>
-					<h4 class="center">R$ 29,90</h4>
-				</div>
-			</div>			
-		</div>	
-	</div>
-	<a class="center btn-down btn-down-products scrollSuave" href="#menu-products"></a>
-</section>
-
-<section id="menu-products" class="container valign-wrapper">
-	<div>
-		<h2 class="center">Cardápio</h2>
-		<div class="row valign-wrapper">
-			<div class="col s12 m6 l6 right">
-		       	<ul class="tabs menu-opcoes">
-		        	<li class="tab"><a href="#pizzas" class="waves-effect 
-		        	waves-light black-text">Pizzas </a></li>
-		            <li class="tab"><a href="#hamburgers" class="waves-effect 
-		            waves-light black-text">Hamburgers </a></li>
-		    	</ul>			
-			</div>
-		</div>
-		<div id="pizzas">
-			<div class="row">
-				<div class="col s6 m6 l6">
-					<div class="menu-item item1"></div>
-					<div>
-						<h5>Carne Seca</h5>
-						<p>Massa, molho, mussarela, carne seca acebola, cheiro verde,
-						 azeitona preta, orégano, cebola e tomate</p>
-					</div>
-				</div>
-				<div class="col s6 m6 l6">
-					<div class="menu-item item2">
-					</div>
-					<div>
-						<h5>Americana</h5>
-						<p>Massa, molho, mussarela, bacon, ovos, tomate, 
-						 azeitona preta, orégano e cebola</p>
-					</div>
-				</div>
-			</div> <!-- end row -->
-			<div class="row">
-				<div class="col s6 m6 l6">
-					<div class="menu-item item3"></div>
-					<div>
-						<h5>Baiana</h5>
-						<p>Massa, molho, mussarela, calabresa moída, parmesão, 
-						 tempero baiano, tomate, orégano e cebola</p>
-					</div>
-				</div>
-				<div class="col s6 m6 l6">
-					<div class="menu-item item4"></div>
-					<div>
-						<h5>Portuguesa</h5>
-						<p>Massa, molho, mussarela, presunto, ovos, seleta de legumes, 
-						 azeitona preta, tomate, orégano e cebola</p>
-					</div>
-				</div>
-			</div> <!-- end row -->
-		</div> <!-- end section pizza -->
-		<div id="hamburgers">
-			<div class="row">
-				<div class="col s6 m6 l6">
-					<div class="menu-item item5"></div>
-					<div>
-						<h5>Abacaxi</h5>
-						<p>Massa podre (Massa Brisée) com recheio de creme branco, brigadeiro 
-						branco e abacaxi e cobertura de gelatina de abacaxi e chantilly</p>
-					</div>
-				</div>
-				<div class="col s6 m6 l6">
-					<div class="menu-item item6"></div>
-					<div>
-						<h5>Maracujá</h5>
-						<p>Massa podre (Massa Brisée) com recheio de creme de maracujá 
-						e cobertura chantilly.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col s6 m6 l6">
-					<div class="menu-item item7"></div>
-					<div>
-						<h5>Nozes</h5>
-						<p>Massa podre (Massa Brisée) com recheio de brigadeiro branco com nozes
-						 e creme branco e a cobertura é com nozes mariposa e chantilly.</p>
-					</div>
-				</div>
-				<div class="col s6 m6 l6">
-					<div class="menu-item item8"></div>
-					<div>
-						<h5>Limão</h5>
-						<p>Massa podre (Massa Brisée) com recheio de creme de limão e cobertura 
-						chantilly com raspas de limão</p>
-					</div>
-				</div>
-			</div>	
-		</div>
-		<div class="row center">
-        	<a href="cardapio.html" class="btn cyan waves-effect waves-light center white-text" >
-	        	<i class="material-icons center">forward</i>
-	        </a>
-		</div>
-	</div>
-</section> <!-- end menu -->
-<div class="divider container"></div>	
-<section id="about" class="container valign-wrapper">
-	<div>
-		<h2 class="center">Sobre nós</h2>
-		<h4 class="center">"Lorem ipsum dolor sit amet"</h4>
-		<div class="row">
-			<div class="col s12 m6 l6">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing ellit. Quo incidunt tempoca dolorum oluptas voluptatem atque, debitis aliquid weniam sunt dolor molestiae fungit eaque nulla quas assumenda repudiandae quasi quibusdam laborum!Lorem ipsum dolor sit amet, consectetur adipiscing ellit. Quo incidunt tempoca dolorum oluptas voluptatem atque, debitis aliquid weniam sunt dolor molestiae fungit eaque nulla quas assumenda repudiandae quasi quibusdam laborum!</p>
-			</div>
-			<div class="col s12 m6 l6">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing ellit. Quo incidunt tempoca dolorum oluptas voluptatem atque, debitis aliquid weniam sunt dolor molestiae fungit eaque nulla quas assumenda repudiandae quasi quibusdam laborum!Lorem ipsum dolor sit amet, consectetur adipiscing ellit. Quo incidunt tempoca dolorum oluptas voluptatem atque, debitis aliquid weniam sunt dolor molestiae fungit eaque nulla quas assumenda repudiandae quasi quibusdam laborum!</p>
-			</div>
-		</div>
-		<div class="row center">
-	        <a href="sobrenos.html" class="btn cyan waves-effect waves-light center" >
-	        	<i class="material-icons center">forward</i>
-	        </a>
-		</div>
-	</div>
-</section>
-
-<section id="contact">
-
-	<div class="mapa">
-		<img src="./images/mapa.jpg"/>
-	</div>
-
-	<div class="row linha">			
-			<form class="col s12 m4 l4 offset-m4 offset-l4 lb-nome grey darken-3" 
-			 method="POST" action="https://formspree.io/gleidson@sisout.com">
-				<h2 class="center">Contate-nos</h2>
-				<div class="input-field col s12">
-					<i class="material-icons prefix">person</i>
-		          	<input id="name" type="text" class="validate" name="name">
-		          	<label for="name">Nome</label>
-				</div>
-			    <div class="row">
-		        	<div class="input-field col s12">
-						<i class="material-icons prefix">email</i>
-			        	<input id="email" type="email" class="validate" name="_replyto">
-			          	<label for="email">Email</label>
-			        </div>
-			    </div>
-			    	<input type="hidden" name="_subject" value="Assunto" />
-			    <div class="row">
-		        	<div class="input-field col s12">
-						<i class="material-icons prefix">message</i>
-				    	<textarea id="textarea" class="materialize-textarea" name="message"></textarea>
-				    	<label for="textarea">Mensagem</label>
-			    	</div>
-			    </div>
-		            <input type="text" name="_gotcha" style="display:none" /> <!-- Campo anti-spam -->
-			        <input type="hidden" name="_next" value="#contact" /> <!-- Mensagem de sucesso -->
-			    <div class="row">
-					<div class="input-field col s12">
-                        <button class="btn cyan waves-effect waves-light right" type="submit">Enviar
-                        	<i class="mdi-content-send right"></i>
-                        </button>
                     </div>
-			    </div>		
-			</form>
-	</div>
-</section>
+                </div>
+            </div>
+        </div>
+    </section><!--/#main-slider-->
+    <section id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Nossas características</h2>
+                <p class="wow fadeInDown">Fidelidade e compromisso com nossos clientes <br> atendemos os novos
+                    empreendedores</p>
+            </div>
+            <div class="row FeatLayout">
+                <div class="col-md-5 Featimg"> <img src="./images/features_img.png" alt="feature"
+                        class="img-responsive center-block"></div>
+                <div class="col-md-7">
+                    <h2>Nos fazemos sua vida mais facil</h2>
+                    <p>Para melhor atender nossos clientes deixamos disponíveis versões demos para amostra, caso queria
+                        entender melhor
+                        <a href="#contact" style="color: rgb(45, 108, 224);">entre em contato</a> conosco para melhor
+                        entendimento de
+                        nossos serviços
+                    </p>
+                    <ul class="listarrow">
+                        <li><i class="fa fa-angle-double-right"></i>Comunicação</li>
+                        <li><i class="fa fa-angle-double-right"></i>Fidelidade</li>
+                        <li><i class="fa fa-angle-double-right"></i>Resolução</li>
+                        <li><i class="fa fa-angle-double-right"></i>Agilidade</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
 
-<footer class="page-footer grey darken-4">
-	<div class="container">
-		<div class="row valign-wrapper">
-			<div class="col s12 m4 l4">
-				<p class="white-text"><i class="material-icons">location_on</i>Av. Dr. Silas Munguba, 1200. Itaperi</p>	
-				<p class="white-text"><i class="material-icons">smartphone</i>(85) 99213-4031</p>		
-				<p class="white-text"><i class="material-icons">mail</i>atendimento@dominio.com</p>
-			</div>
-			<div class="col s12 m4 l4 hide-on-med-and-down">
-				<div class="logo"></div>
-			</div>
-			<div class="col s12 m4 l4 ">
-			<div class="valign-wrapper">
-				<div class="">		
-					<ul class="social-medias">
-						<li><a class="grey-text text-lighten-3 facebook" href="#!">Facebook</a></li>
-						<li><a class="grey-text text-lighten-3 twitter" href="#!">Twitter</a></li>
-						<li><a class="grey-text text-lighten-3 instagram" href="#!">Instagram</a></li>
-						<li><a class="grey-text text-lighten-3 youtube" href="#!">Youtube</a></li>
-					</ul>
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Sobre nosso serviço para você</h2>
+                <p class="wow fadeInDown">Aqui explicaremos nossos serviços e como funcionam
+                    <br>Por favor leia atentamente
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="features">
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Nosso negócio</h4>
+                                <p>Nossos serviços de formal geral é voltado para agilidade
+                                    de processos na area de serviços de alimentação e bebida, voltamos os olhos
+                                    principalmente
+                                    para<strong> pequenas lanchonetes, foodtrucks e convenienências</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-cogs" aria-hidden="true"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Diferencie e traga vantagens ao seu negócio</h4>
+                                <p>Temos produtos de delivery gitial, agilizando seus pedidos você pode dar alcance a
+                                    novos clientes
+                                    de forma online, você receberá com mais facilidade as demandas e a entrega se torna
+                                    mais eficaz
+                                </p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-cutlery" aria-hidden="true"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Objetivo da ÁskerTech</h4>
+                                <p>Garantir ao clinte uma ordem de serviço organizada, idenpente, agil e principalmente
+                                    eficaz</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                </div>
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#services-->
+
+
+    <!-- <section id="about">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">About Us</h2>
+                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 wow fadeInLeft">
+                  <img class="img-responsive" src="./images/about.png" alt="">
+                </div>
+
+                <div class="col-sm-6 wow fadeInRight">
+                    <h3 class="column-title">Our Company</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam quis mattis quam. Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
+
+                    <p>Nulla eu neque commodo, dapibus dolor eget, dictum arcu. In nec purus eu tellus consequat ultricies. Donec feugiat tempor turpis, rutrum sagittis mi venenatis at. Sed molestie lorem a blandit congue. Ut pellentesque odio quis leo volutpat, vitae vulputate felis condimentum. </p>
+
+					<p>Praesent vulputate fermentum lorem, id rhoncus sem vehicula eu. Quisque ullamcorper, orci adipiscing auctor viverra, velit arcu malesuada metus, in volutpat tellus sem at justo.</p>
+
+
+                    <a class="btn btn-primary" href="#">Learn More</a>
+
+                </div>
+            </div>
+        </div>
+    </section>/#about -->
+
+
+    <section id="portfolio" style="display:none;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Servers</h2>
+                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus
+                    vitae massa <br> semper aliquam quis mattis quam.</p>
+            </div>
+
+            <div class="text-center">
+                <ul class="portfolio-filter">
+                    <li><a class="active" href="#" data-filter="*">All Works</a></li>
+                    <li><a href="#" data-filter=".designing">Designing</a></li>
+                    <li><a href="#" data-filter=".mobile">Mobile App</a></li>
+                    <li><a href="#" data-filter=".development">Development</a></li>
+                </ul><!--/#portfolio-filter-->
+            </div>
+
+            <div class="portfolio-items">
+                <div class="portfolio-item designing">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="./images/portfolio/01.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Project Name</h3>
+                            Some description..
+                            <a class="preview" href="./images/portfolio/01.jpg" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item mobile development">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="./images/portfolio/02.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Project Name</h3>
+                            Some description..
+                            <a class="preview" href="./images/portfolio/02.jpg" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item designing">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="./images/portfolio/03.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Project Name</h3>
+                            Some description..
+                            <a class="preview" href="./images/portfolio/03.jpg" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item mobile">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="./images/portfolio/04.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Project Name</h3>
+                            Some description..
+                            <a class="preview" href="./images/portfolio/04.jpg" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item designing development">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="./images/portfolio/05.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Project Name</h3>
+                            Some description..
+                            <a class="preview" href="./images/portfolio/05.jpg" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item mobile">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="./images/portfolio/06.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Project Name</h3>
+                            Some description..
+                            <a class="preview" href="./images/portfolio/06.jpg" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item designing development">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="./images/portfolio/07.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Project Name</h3>
+                            Some description..
+                            <a class="preview" href="./images/portfolio/07.jpg" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item mobile">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="./images/portfolio/08.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Project Name</h3>
+                            Some description..
+                            <a class="preview" href="./images/portfolio/08.jpg" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+            </div>
+        </div><!--/.container-->
+    </section><!--/#portfolio-->
+
+    <section id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Produtos e preços</h2>
+                <p class="wow fadeInDown">Aqui está os preços de nossos produtos</p>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <ul class="pricing">
+                            <li class="plan-header">
+                                <div class="price-duration">
+                                    <span class="price">
+                                        R$50
+                                    </span>
+                                    <span class="duration">
+                                        por mês
+                                    </span>
+                                </div>
+
+                                <div class="plan-name">
+                                    Basico
+                                </div>
+                            </li>
+                            <li><strong>1</strong> Cardapio digital</li>
+                            <li><strong>Site</strong> Ativo</li>
+                            <li><strong>Dominio</strong> não pago</li>
+                            <li>Para apresentação de seus produtos pela internet</li>
+                            <li><strong>Suporte</strong> gratuito</li>
+                            <li><strong>R$10</strong> para atualização mensal</li>
+                            <li class="plan-purchase"><a class="btn btn-primary"
+                                    href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c938084894f5e5d0189502700e1003c">Comprar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="600ms">
+                        <ul class="pricing">
+                            <li class="plan-header">
+                                <div class="price-duration">
+                                    <span class="price">
+                                        R$135
+                                    </span>
+                                    <span class="duration">
+                                        por mês
+                                    </span>
+                                </div>
+
+                                <div class="plan-name">
+                                    Iniciante
+                                </div>
+                            </li>
+                            <li><strong>1</strong> Caradapio digital</li>
+                            <li><strong>Site</strong> ativo</li>
+                            <li><strong>Dominio</strong> pago</li>
+                            <li><strong>Delivery digital</strong> Ativo</li>
+                            <li><strong>Segurança de envio</strong> Ativo</li>
+                            <li><strong>Envio de pedido por</strong> Email</li>
+                            <li><strong>50</strong> pedidos por mês</li>
+                            <li>Perfeito para dar inicio com mais confoto aos seus clientes
+                            </li>
+                            <li><strong>Suporte</strong> gratuito</li>
+                            <li><strong>R$15</strong> para atulização mensal</li>
+                            <li class="plan-purchase"><a class="btn btn-primary"
+                                    href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c938084894f5e4301895028251a002e">Comprar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="400ms">
+                        <ul class="pricing">
+                            <li class="plan-header">
+                                <div class="price-duration">
+                                    <span class="price">
+                                        R$200
+                                    </span>
+                                    <span class="duration">
+                                        por mês
+                                    </span>
+                                </div>
+
+                                <div class="plan-name">
+                                    Profissional
+                                </div>
+                            </li>
+                            <li><strong>1 ou 2</strong> Caradapio digital</li>
+                            <li><strong>Site</strong> ativo</li>
+                            <li><strong>Dominio</strong> pago</li>
+                            <li><strong>Delivery digital</strong> Ativo</li>
+                            <li><strong>Segurança de envio</strong> Ativo</li>
+                            <li><strong>Envio de pedido por</strong> Telegram & Email</li>
+                            <li><strong>500</strong> pedidos por mês</li>
+                            <li>Focado em trazer mais agilidade e eficácia
+                            </li>
+                            <li><strong>Suporte</strong> gratuito</li>
+                            <li><strong>R$30</strong> para atulização mensal</li>
+                            <li class="plan-purchase"><a class="btn btn-primary"
+                                    href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c938084894f5ec201895028da0f0029">Comprar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="200ms">
+                        <ul class="pricing featured">
+                            <li class="plan-header">
+                                <div class="price-duration">
+                                    <span class="price">
+                                        R$350
+                                    </span>
+                                    <span class="duration">
+                                        por mês
+                                    </span>
+                                </div>
+
+                                <div class="plan-name">
+                                    EMPREENDEDOR
+                                </div>
+                            </li>
+                            <li><strong>1 ou 3</strong> Caradapio digital</li>
+                            <li><strong>Site</strong> ativo</li>
+                            <li><strong>Dominio</strong> pago</li>
+                            <li><strong>Delivery digital</strong> Ativo</li>
+                            <li><strong>Segurança de Envio</strong> Ativo</li>
+                            <li><strong>Envio de pedido por</strong> Telegram & Email</li>
+                            <li><strong>2 mil</strong> pedidos por mês</li>
+                            <li>Ideal para alcançar novos clientes e receber pedidos de forma
+                                mais organizada e rápida
+                            </li>
+                            <li><strong>Suporte</strong> gratuito</li>
+                            <li><strong>Atualização </strong> incluso</li>
+                            <li class="plan-purchase"><a class="btn btn-primary"
+                                    href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c938084894f5e8f018950299e77002b">Comprar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section><!--/#pricing-->
+
+    <section id="business-stats">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Suporte ao cliente </h2>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow fadeInUp" data-wow-duration="500ms" data-wow-delay="0ms">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <blockquote>Atualizar cardápio </blockquote>
+                            </div>
+                        </div>
+                        <button type="button" data-toggle="modal" data-target="#modalCardapioAtulizar" id="btnSuporte"
+                            class="btn btn-primary col-md-6"><i class="fa fa-pencil-square-o"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow fadeInUp" data-wow-duration="500ms" data-wow-delay="100ms">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <blockquote>Relatar problema</blockquote>
+                            </div>
+                        </div>
+                        <button type="button" data-toggle="modal" data-target="#modalRelatarProblema" id="btnSuporte"
+                            class="btn btn-danger col-md-6"><i class="fa fa-exclamation-circle"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <blockquote>Sugestão</blockquote>
+                            </div>
+                        </div>
+                        <button type="button" data-toggle="modal" data-target="#modalSugestao" id="btnSuporte"
+                            class="btn btn-warning col-md-6"><i class="fa fa-users" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <blockquote>Avaliar</blockquote>
+                        </div>
+                    </div>
+                    <div class="wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <button type="button" data-toggle="modal" data-target="#modalAvaliar" id="btnSuporte"
+                            class="btn btn-success col-md-6"><i class="fa fa-star" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="our-team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Amazing Team</h2>
+                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+            </div>
+			
+			 	
+            <div class="row text-center">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="images/team/01.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>John Deo</h3>
+                            <span>Founder</span> 
+                        </div> 
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="images/team/02.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Mike Timobbs</h3>
+                            <span>President</span> 
+                        </div> 
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="images/team/03.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Remo Silvaus</h3>
+                            <span>Architect</span> 
+                        </div> 
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="images/team/04.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Niscal Deon</h3>
+                            <span>Manager</span> 
+                        </div> 
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>/#our-team -->
+
+    <!-- <section class="testimonial-area" id="testimonial">
+			<div class="container">
+				<div class="section-header">
+                <h2 class="section-title wow fadeInDown">Testimonial</h2>
+                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+            </div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="single-testimonial animate_fade_in" style="opacity: 1; right: 0px;">
+							<div class="row">
+								<div class="col-xs-12">
+									<blockquote>Sontrary to popular belief, Lorem Ipsuis no simply random text. It has roots in a piece of classical Layears old. belief, Lorem Ipsuis not simply</blockquote>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-3">
+									<img src="images/pic1.jpg" alt="client">
+								</div>
+								<div class="col-xs-9 half-gutter">
+									<h5>John Bond</h5>
+									<h6>Lorem Ipsuis simply</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="single-testimonial animate_fade_in" style="opacity: 1; right: 0px;">
+							<div class="row">
+								<div class="col-xs-12">
+									<blockquote>Tontrary to popular belief, Lorem Ipsuis no simply random text. It has roots in a piece of classical Layears old. belief, Lorem Ipsuis not simply</blockquote>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-3">
+									<img src="./images/pic2.jpg" alt="client">
+								</div>
+								<div class="col-xs-9 half-gutter">
+									<h5>John Bond</h5>
+									<h6>Lorem Ipsuis simply</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="single-testimonial animate_fade_in" style="opacity: 1; right: 0px;">
+							<div class="row">
+								<div class="col-xs-12">
+									<blockquote>Aontrary to popular belief, Lorem Ipsuis no simply random text. It has roots in a piece of classical Layears old. belief, Lorem Ipsuis not simply</blockquote>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-3">
+									<img src="./images/pic1.jpg" alt="client">
+								</div>
+								<div class="col-xs-9 half-gutter">
+									<h5>John Bond</h5>
+									<h6>Lorem Ipsuis simply</h6>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			</div>
-		</div>
-	</div>
-	<div class="footer-copyright black">
-		<div class="container">
-			© 2016 Copyright Lanchonete
-			<a class="grey-text text-lighten-4 right" target="_blank" href="https://sisout.com">sisout</a>
-		</div>
-	</div>
-</footer>
+		</section>
+    <section id="contact-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Contact Us</h2>
+                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+            </div>
+        </div>
+<<<<<<< HEAD
+    </section>/#contact-us -->
 
-<script type="text/javascript" src="./js/jquery.min.js"></script>
-<script type="text/javascript" src="./js/materialize.min.js"></script>
-<script type="text/javascript" src="./js/index.js"></script>
+    </section>
+
+
+
+    <section id="contact">
+
+        <div class="container">
+            <div class="container contact-info">
+                <div class="row">
+                    <div class="col-sm-4 col-md-4">
+                        <div class="contact-form">
+                            <h3>Informações de contato</h3>
+
+                            <address>
+                                <strong>SC, Blumenau - Itoupava Central</strong><br>
+                                <abbr title="Phone">Numero :</abbr> (47) 988481939
+                            </address>
+                        </div>
+                    </div>
+
+                    <!-- <section>
+                        <h2>Preencha</h2>
+                        <p>
+                        <form method="POST" action="https://formspree.io/f/mqkobadr">
+                            <input type="nome" name="Nome" class="form-control" placeholder="Nome completo" required />
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <input type="telefone" class="telefone form-control" name="Telefone" placeholder="Telefone"
+                                        required>
+                                </div>
+                                <div class="form-group col-md-6 ">
+                                    <input type="email" class="email form-control" name="Email" placeholder="emailgithub@exemplo.com"
+                                        required>
+                                </div>
+                            </div>
+                            <textarea name="necessidade" class="form-control" placeholder="Fale um pouco sobre você " required></textarea>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                        </p>
+                    </section> -->
+
+                    <div class="col-sm-8 col-md-8">
+                        <div class="contact-form">
+
+                            <form id="main-contact-form" name="contact-form" method="post"
+                                action="https://formspree.io/f/mqkobadr">
+                                <div class="form-group">
+                                    <input type="text" name="Nome" class="form-control" placeholder="Nome" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="telefone" class="telefone form-control" name="Telefone"
+                                        placeholder="Telefone" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="Email" class="form-control" placeholder="Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="Titulo" class="form-control" placeholder="Titulo" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" class="form-control" rows="8"
+                                        placeholder="Diga-nos o que precisa ?" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--/#bottom-->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2023 ÁskerTech.
+                </div>
+                <div class="col-sm-6">
+                    <ul class="social-icons">
+                        <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
+                        <li><a href="https://www.linkedin.com/company/%C3%A1skertech/"><i class="fa fa-linkedin"></i></a></li>
+                        <!-- <li><a href="#"><i class="fa fa-youtube"></i></a></li> -->
+                        <li><a href="https://github.com/4skert3ch"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+
+    <!--/#Modals-->
+    <div class="modal fade" id="modalCardapioAtulizar" tabindex="-1" role="dialog"
+        aria-labelledby="modalCardapioAtulizarTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Atualizar cardápio</h5>
+                    <button style="position: relative; top: -15px;" type="button" class="close" data-dismiss="modal"
+                        aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="https://formspree.io/f/mqkobadr" method="POST">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <input style="display: none;" value="ATULIZAR CARDÁPIO" type="text" name="SUPORTE" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Nome do proprietário</label>
+                            <input type="text" name="Nome do proprietário" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Nome do estabelecimento</label>
+                            <input type="text" name="Nome do estabelecimento" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Chave</label>
+                            <input type="password" name="Chave" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Descreva o que você deseja
+                                atualizar</label>
+                            <textarea name="Atualização" class="form-control" id="message-text"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalRelatarProblema" tabindex="-1" role="dialog" aria-labelledby="RelatarProblemaTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Relatar problema</h5>
+                    <button style="position: relative; top: -15px;" type="button" class="close" data-dismiss="modal"
+                        aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="https://formspree.io/f/mqkobadr" method="POST">
+                <div class="modal-body">
+                        <div class="form-group">
+                            <input style="display: none;" value="PROBLEMA !!" type="text" name="SUPORTE" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Nome do proprietário</label>
+                            <input type="text" name="Nome do proprietário" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Nome do estabelecimento</label>
+                            <input type="text" name="Nome do estabelecimento" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Chave</label>
+                            <input type="password" name="Chave" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Titulo do problema</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Problema</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalSugestao" tabinde="-1" role="dialog" aria-labelledby="modalSugestao"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Sugestão</h5>
+                    <button style="position: relative; top: -15px;" type="button" class="close" data-dismiss="modal"
+                        aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="https://formspree.io/f/mqkobadr" method="POST">
+                <div class="modal-body">
+                    <input style="display: none;" value="SUGESTÃO" type="text" name="SUPORTE" class="form-control" id="recipient-name">    
+                    <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Titulo da sugestão</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Sugestão</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalAvaliar" tabindex="-1" role="dialog" aria-labelledby="modalAvaliar"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Avaliar</h5>
+                    <button style="position: relative; top: -15px;" type="button" class="close" data-dismiss="modal"
+                        aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="https://formspree.io/f/mqkobadr" method="POST">
+                <div class="modal-body">
+                        <link rel="stylesheet"
+                            href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+                        <input style="display: none;" value="AVALIAÇÃO" type="text" name="SUPORTE" class="form-control" id="recipient-name">
+                        <div class="estrelas">
+                            <input type="radio" id="cm_star-empty" name="fb" value="" checked />
+                            <label for="cm_star-1"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-1" name="fb" value="1" />
+                            <label for="cm_star-2"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-2" name="fb" value="2" />
+                            <label for="cm_star-3"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-3" name="fb" value="3" />
+                            <label for="cm_star-4"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-4" name="fb" value="4" />
+                            <label for="cm_star-5"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-5" name="fb" value="5" />
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Nome do estabelecimento</label>
+                            <input type="text" name="Nome do estabelecimento" class="form-control" id="recipient-name">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/mousescroll.js"></script>
+    <script src="./js/smoothscroll.js"></script>
+    <script src="./js/jquery.prettyPhoto.js"></script>
+    <script src="./js/jquery.isotope.min.js"></script>
+    <script src="./js/jquery.inview.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/custom-scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.inputPreco').mask('000.000.000.000.000,00', { reverse: true });
+            jQuery("input.telefone")
+                .mask("(99) 00000-0000")
+                .focusout(function (event) {
+                    var target, phone, element;
+                    target = (event.currentTarget) ? event.currentTarget : event.srcElement;
+                    phone = target.value.replace(/\D/g, '');
+                    element = $(target);
+                    element.unmask();
+                    if (phone.length > 10) {
+                        element.mask("(99) 00000-0000");
+                    } else {
+                        element.mask("(99) 00000-0000");
+                    }
+                });
+        });
+    </script>
+
 </body>
+
 </html>
